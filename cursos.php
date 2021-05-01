@@ -1,3 +1,8 @@
+<?php
+    //to allow use mySQL DATABASE
+    require_once 'videosController.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,12 +32,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Scaffold - v2.2.1
-  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -42,25 +41,17 @@
   <div class="container d-flex">
 
     <div class="logo mr-auto">
-      <h1 class="text-light"><a href="index.html"><span>Evoluir</span></a></h1>
+      <h1 class="text-light"><a href="index.php"><span>Evoluir</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li class="drop-down"><a href="">Cursos</a>
-          <ul>
-            <!-- LOOPING AQUI DEPENDENDO DA QUANTIDADE DO NIVEL -->
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <!-- ------------- -->
-          </ul>
-        </li>
-        <li><a href="#contact">Contato</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
+        <li><a href="index.php">Sobre</a></li>
+        <li><a href="cursos.php">Videos</a></li>
+        <li><a href="index.php">Contato</a></li>
 
       </ul>
     </nav><!-- .nav-menu -->
@@ -79,10 +70,10 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
+          <li><a href="index.php">Home</a></li>
+          <li>Videos</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Videos</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -92,7 +83,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Videos</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -268,6 +259,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/api.js"></script>
 
 </body>
 
